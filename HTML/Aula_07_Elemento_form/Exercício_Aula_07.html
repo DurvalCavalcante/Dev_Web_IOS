@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sweet and Love</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Loja do Jony</h1>
+
+    </header>
+
+    <h3>Preencha os formulário abaixo :</h3><br>
+
+    <main>
+        <article>
+            <!-- Campo de preenchimento do formulário.-->
+            <form action="#">
+                <p>Adicione aqui algumas informações sobre você :</p>
+
+                <label for="cNome">Nome:</label><br>
+                <input type="text" name="tNome" id="cNome" size="50" required="required" placeholder="Nome"><br>
+
+                <label for="cIdade">Idade:</label><br>
+                <input type="text" name="tIdade" id="cIdade" size="50" required="required" placeholder="Idade"><br>
+
+                <label for="cEmail">E-mail:</label><br>
+                <input type="text" name="tEmail" id="cEmail" size="50" required="required" placeholder="E-mail"><br>
+
+            </form>
+
+        </article><br>
+
+        <article>
+            <!-- Campo para escolher a opção de narcação.-->
+            <form action="##">
+                <p>Você indicaria esse site para um dos seus amigos ?</p>
+
+                <ul>
+                    <li type="circle">
+                        <label for="cSim">Sim</label>
+                        <input type="radio" name="pRes" id="cSim" value="S">
+
+                    </li>
+
+                    <li type="circle">
+                        <label for="cNao">Não</label>
+                        <input type="radio" name="pRes" id="cNao" value="N">
+
+                    </li>
+
+                </ul>
+
+            </form>
+
+        </article>
+
+        <article>
+            <!-- Campo para escolher várias opções.-->
+            <form action="###">
+                <p>O que você mais gostou da loja ?</p>
+
+                <ul>
+                    <li>
+                        <label for="">Doces</label>
+                        <input type="checkbox" name="op1" id="tOp1" value="doces">
+
+                    </li>
+
+                    <li>
+                        <label for="">Ambiente</label>
+                        <input type="checkbox" name="op2" id="tOp2" value="ambiente">
+
+                    </li>
+
+                    <li>
+                        <label for="">Entrega do pedido</label>
+                        <input type="checkbox" name="op3" id="tOp3" value="entrega">
+
+                    </li>
+
+                    <li>
+                        <label for="">Atendimento</label>
+                        <input type="checkbox" name="op4" id="tOp4" value="atendimento">
+
+                    </li>
+
+                    <li>
+                        <label for="">Valores</label>
+                        <input type="checkbox" name="op5" id="tOp5" value="valores">
+
+                    </li><br>
+
+
+                </ul>
+
+            </form>
+
+        </article>
+
+        <article>
+            <!-- Criando uma lista suspensa com opções de escolhas.-->
+            <form action="####">
+                <label for="">Qual sobremesa ou salgado você comprou no último pedido ?</label><br><br>
+                <input type="text" name="tPedido" id="tComprou" size="50" required="required" placeholder="Informe aqui!"><br><br>
+
+                <!-- O atributo select, é usado para criar um lista com opções de escolha.-->
+                <label for="aOp">Em qual loja você foi atendido ?</label>
+                <select name="aLista" id="aOp">
+                    <option value="aclimação">Aclimação</option>
+                    <option value="liberdade">Liberdade</option>
+                    <option value="tatuapé">Tatuapé</option>
+                    <option value="sãoJoaquim">São Joaquim</option>
+
+                </select><br><br>
+
+                <input type="submit" value="Enviar">
+
+            </form>
+
+        </article>
+
+    </main><br>
+
+    <footer>
+        <small>&copy; - Instituto da Oportunidade Social</small>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 07</title>
+
+</head>
+
+<body>
+    <header>
+        <ul>
+            <nav>
+                <h2>Elementos Formulário</h2>
+
+                <li><a href="">Input e label</a></li>
+                <li><a href="">Checkbox e radio</a></li>
+                <li><a href="">Select e datalist</a></li>
+                <li><a href="">Textarea</a></li>
+                <li><a href="">Fieldset e legend</a></li>
+                <li><a href="">Atributo action do elemento form e elemento output</a></li>
+
+            </nav>
+
+        </ul>
+
+    </header>
+
+    <main>
+        <fieldset>
+            <legend>Formulário</legend>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto expedita natus omnis atque
+                exercitationem, inventore modi. Eligendi totam distinctio eaque a blanditiis maiores obcaecati rem qui
+                quaerat, error, fugit ipsa?
+            </p>
+
+            <!-- O valor maxlength, é usado para configurar o tamanho máximo de dados que será aceito na caixa de texto.-->
+            <!-- O valor value, atribui um valor inicial à caixa de texto exibida pelo navegador.-->
+            <!-- O valor required, é usado para obrigar o preenchimento de um formulário.-->
+
+            <form method="post" action="#" name="Teste">
+
+                <label for="cTeste1">Teste 1</label>
+                <input type="text" name="Para inserir alguma informação sobre algo." size="50" maxlength="10" id="cTeste1">
+
+                <!--Radio-->
+                <!-- O valor radio, é usado para escolher uma opção. -->
+                <p>Qual é a sua cor preferida ?</p>
+                <input type="radio" name="cCor" id="cAmarelo" value="amarelo">
+                <label for="cAmarelo">Amarelo</label>
+
+                <input type="radio" name="cCor" id="cVerde" value="verde">
+                <label for="cVerde">Verde</label>
+
+                <input type="radio" name="cCor" id="cPreto" value="preto">
+                <label for="cPreto">Preto</label><br><br>
+
+                <!--CheckBox-->
+                <!-- O valor checkbox, é usado para escolher uma ou mais opção.-->
+                <p>Quais cidades você já visitou ?</p>
+                <input type="checkbox" name="vCidade" id="cSP" value="sãoPaulo">
+                <label for="cSP">São Paulo</label>
+
+                <input type="checkbox" name="vCidade" id="cRJ" value="rio de Janeiro">
+                <label for="cRJ">Rio de Janeiro</label>
+
+                <input type="checkbox" name="vCidade" id="cPE" value="pernambuco">
+                <label for="cPE">Pernambuco</label><br><br>
+
+                <!-- Select - Lista suspensa-->
+                <label for="melhortime">Qual é o melhor time ?</label>
+                <select name="time" id="melhortime">
+                    <option value="corinthians">Corinthians</option>
+                    <option value="saoPaulo">São Paulo</option>
+                    <option value="santos">Santos</option>
+                    <option value="semMundial">Sem Mundial</option>
+
+                </select><br><br>
+
+                <!-- Tipo Range-->
+                0
+                <input type="range" list="valor_01" min="1" max="10">
+                10
+                <datalist id="valor_01">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+
+                </datalist><br><br>
+
+
+                <!-- Textarea-->
+                <!-- O valor placeholder, é usado para deixar uma mensagem dentro do campo de texto.-->
+                <textarea name="feedback" id="" cols="40" rows="10" placeholder="Deixe aqui seu Feedback!"></textarea><br><br>
+
+                <!-- O atributo action, é usado para indicar para onde serão enviados os dados preenchidos pelo usuário.-->
+
+                <!-- Datalist - Lista pré-definida (sugestões)-->
+
+                <input type="submit" name="Enviar">
+
+            </form>
+
+        </fieldset>
+
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sweet and Love</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Loja do Jony</h1>
+
+    </header>
+
+    <h3>Preencha os formulário abaixo :</h3><br>
+
+    <main>
+        <article>
+
+            <form action="durvalcavlcante00@gmail.com" method="post">
+
+                <fieldset>
+                    <legend>Indentificação :</legend>
+                    <!-- Campo de preenchimento do formulário.-->
+                    <label for="cNome">Nome:</label><br>
+                    <input type="text" name="tNome" id="cNome" size="50" required="required"><br>
+
+                    <label for="cIdade">Idade:</label><br>
+                    <input type="text" name="tIdade" id="cIdade" size="50" required="required"><br>
+
+                    <label for="cEmail">E-mail:</label><br>
+                    <input type="text" name="tEmail" id="cEmail" size="50" required="required"><br>
+
+
+                    <p>Você indicaria esse site para um dos seus amigos ?</p>
+                    <!-- Campo para escolher a opção de narcação.-->
+                    
+                    <input type="radio" name="pRes" id="cSim" value="S">
+                    <label for="cSim">Sim</label><br>
+                    
+                    <input type="radio" name="pRes" id="cNao" value="N">
+                    <label for="cNao">Não</label>
+
+                </fieldset><br>
+
+                <fieldset>
+                    <legend>O que você mais gostou da loja ?</legend>
+                    <!-- Campo para escolher várias opções.-->
+
+                    <div>
+                        <input type="checkbox" name="op1" id="tOp1" value="doces">
+                        <label for="">Doces</label><br>
+
+                        <input type="checkbox" name="op2" id="tOp2" value="ambiente">
+                        <label for="">Ambiente</label><br>
+
+                        <input type="checkbox" name="op3" id="tOp3" value="entrega">
+                        <label for="">Entrega do pedido</label><br>
+
+                        <input type="checkbox" name="op4" id="tOp4" value="atendimento">
+                        <label for="">Atendimento</label><br>
+
+                        <input type="checkbox" name="op5" id="tOp5" value="valores">
+                        <label for="">Valores</label><br>
+
+                    </div>
+
+                </fieldset><br>
+
+                <fieldset>
+                    <!-- Criando uma lista suspensa com opções de escolhas.-->
+                    <label for="">Qual sobremesa ou salgado você comprou no último pedido ?</label><br><br>
+                    <input type="text" name="tPedido" id="tComprou" size="50" required="required"><br><br>
+
+                    <label for="aOp">Em qual loja você foi atendido ?</label>
+                    <select name="aLista" id="aOp">
+                        <option value="aclimação">Aclimação</option>
+                        <option value="liberdade">Liberdade</option>
+                        <option value="tatuapé">Tatuapé</option>
+                        <option value="sãoJoaquim">São Joaquim</option>
+
+                    </select>
+
+                </fieldset><br><br>
+
+                <fieldset>
+                    <!-- Uma avaliação range.-->
+                    <div>
+
+                        <p>De 0 a 10, Qual é a sua vontade de voltar ao restaurante ?</p><br>
+
+                        0
+                        <input type="range" list="fRange" min="1" max="10">
+                        10
+
+                        <datalist id="fRange">
+
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            <option value="9"></option>
+                            <option value="10"></option>
+
+                        </datalist>
+
+                    </div>
+
+                </fieldset><br>
+
+                <div>
+                    <!-- Caixa de sugestões.-->
+                    <p>Qual é a sua opnião sobre nosso restaurante ?</p>
+
+                    <textarea name="menssage" id="fMenssage" cols="50" rows="10"
+                        placeholder="Deixa aqui seu feedback !">
+                    </textarea>
+
+                </div><br>
+
+                <input type="submit" value="Enviar">
+
+            </form>
+
+        </article>
+
+    </main><br>
+
+    <footer>
+        <small>&copy; - Sweet and Love todos os direitos reservados 2022</small>
+
+    </footer>
+
+</body>
+
+</html>
