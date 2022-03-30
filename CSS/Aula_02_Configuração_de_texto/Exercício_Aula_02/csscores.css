@@ -1,0 +1,17 @@
+@charset "utf-8";
+body{
+    background-color: rgb(175, 231, 231);
+    color: darkblue;
+}
+
+h1{
+    color: #ff9898;
+}
+
+li{
+    color: hsl(0, 100%, 30%);
+}
+
+footer{
+    color: #99F
+}
