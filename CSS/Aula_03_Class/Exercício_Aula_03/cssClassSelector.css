@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+body {
+    background-color: #484848;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    background-color: #d8d8d8;
+    line-height: 200%;
+    font-family: Georgia, "Times New Roman", serif;
+    text-shadow: 3px 3px 5px #604848;
+}
+
+h2 {
+    background-color: #c0c0a8;
+    text-align: center;
+}
+
+/* Para centralizar a imagem automaticamente */
+div.centro{
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 1.1em;
+    text-indent: 2em;
+    background-color: #604848;
+}
+
+footer {
+    color: #333333;
+    font-size: 0.75em;
+    font-style: italic;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.corT {
+    color: #f0f0f0;
+}
+
+p.fundo {
+    background-color: #B0C4DE;
+}
