@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* Para específicar várias tag com o seletor class, e se usa o .(ponto) */
+.eS{
+    color: #7b3b3b;
+}
+
+/* Para específicar uma única tag com o seletor id, e se usa a #(hastag) */
+#eD{
+    color: #b80090;
+}
+
+/* Para específicar várias tag com o seletor id */
+p#teste{
+    background-color: #f99400;
+    color: #668284;
+}
+
+/* Para usar no 'corpo' todo do html */
+*{
+    background-color: #b9d7d9;
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+}
+
+/* Para aplicar algo dentro de uma tag com outra tag */
+section p{
+    color: #b80090;
+    font-family: 'Smokum', cursive;
+    background-color: #b0da09;
+}
+
+h1{
+    background-color: #191970;
+    color: #e6e6fa;
+    line-height: 200%;
+    text-shadow: 3px 3px 5px #ea804c;
+}
+
+h2{
+    background-color: #fff1c1;
+    text-align: center;
+}
