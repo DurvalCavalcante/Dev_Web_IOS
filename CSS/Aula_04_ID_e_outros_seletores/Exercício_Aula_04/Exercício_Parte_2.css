@@ -52,8 +52,5 @@ nav {
 img.img{
     display: flex;
     justify-content: left;
-}
-
-.img {
     clip-path: circle();
 }
