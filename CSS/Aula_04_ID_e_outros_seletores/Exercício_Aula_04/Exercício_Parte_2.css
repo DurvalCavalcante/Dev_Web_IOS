@@ -49,6 +49,11 @@ nav {
     text-align: center;
 }
 
+img.img{
+    display: flex;
+    justify-content: left;
+}
+
 .img {
     clip-path: circle();
 }
