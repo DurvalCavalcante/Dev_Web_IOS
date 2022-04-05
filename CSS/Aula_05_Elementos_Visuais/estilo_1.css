@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+.borda{
+    border-width: 3px;
+    border-color: blue;
+    border-style: dashed;
+    line-height: 300%;
+}
