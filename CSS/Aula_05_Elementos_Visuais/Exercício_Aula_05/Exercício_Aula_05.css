@@ -1,11 +1,12 @@
 @charset "utf-8";
 
 body {
-    background-image: url(JPG/daniel-bogni-donkey-kong-country.jpg);
+    background-image: url(JPG/DKC.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFD365;
     font-family: Arial, Verdana, sans-serif;
+    margin: 10px 20px;
 }
 
 main{
@@ -16,9 +17,13 @@ ul{
     font-size: 1.4em;
 }
 
+h2{
+    border-bottom: 3px solid;
+}
+
 p{
     background-color: #bb998198;
-    color: black;
+    color: #142026;
     font-weight: bold;
     text-indent: 3em;
 }
@@ -32,6 +37,7 @@ h1 {
     text-shadow: 3px 3px 5px #FFCE45;
     font-style: oblique;
     padding: 0.5em;
+    border: 2px solid;
 }
 
 img {
@@ -47,7 +53,9 @@ figure {
 
 figcaption {
     text-align: center;
+    font-size: 1.6em;
     font-family: Papyrus, fantasy;
+    color: #FFD365;
 }
 
 footer {
