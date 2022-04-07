@@ -43,4 +43,11 @@ a {
     border-bottom-width: 10px;
     border-top-style: dotted;
     padding: 20px;
-   }
+}
+
+/* Para deixar uma borda em uma link <a> */
+/* .(nome da class ou id){
+    padding: 5px;
+    border: 8px;
+    border-style: groove;
+} */
