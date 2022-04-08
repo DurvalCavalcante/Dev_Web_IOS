@@ -2,8 +2,25 @@
 
 body {
     font-family: 'Rubik Moonrocks', cursive;
+    background-image: url(Teemo\ fundo.png);
+    color: white;
 }
 
+h1 {
+    text-align: center;
+    text-shadow: 3px 3px 5px goldenrod;
+    border: 2px solid gold;
+    border-radius: 10px;
+    line-height: 200%;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-shadow: 3px;
+}
 /* Float é usado para colocar o texto ao lado da imagem. */
 .img1 {
     width: 600px;
@@ -23,4 +40,9 @@ body {
     clear: none;
     padding: 200px;
     text-align: center;
+}
+
+#center {
+    display: flex;
+    justify-content: center;
 }
