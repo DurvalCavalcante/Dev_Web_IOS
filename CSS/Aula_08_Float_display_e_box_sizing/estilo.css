@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Rubik Moonrocks', cursive;
+}
+
+/* Float é usado para colocar o texto ao lado da imagem. */
+.img1 {
+    width: 600px;
+    height: 350px;
+    margin-top: 2%;
+}
+
+.img2 {
+    float: left;
+}
+
+.img3 {
+    float: right;
+}
+
+.para {
+    clear: none;
+    padding: 200px;
+    text-align: center;
+}
