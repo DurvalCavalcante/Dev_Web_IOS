@@ -4,6 +4,7 @@ body {
     font-family: 'Rubik Moonrocks', cursive;
     background-image: url(Teemo\ fundo.png);
     color: white;
+    text-shadow:5px 5px 10px black;
 }
 
 h1 {
@@ -12,15 +13,13 @@ h1 {
     border: 2px solid gold;
     border-radius: 10px;
     line-height: 200%;
+    text-shadow:5px 5px 10px black;
 }
 
 h2 {
     text-align: center;
 }
 
-p {
-    text-shadow: 3px;
-}
 /* Float é usado para colocar o texto ao lado da imagem. */
 .img1 {
     width: 600px;
