@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+#img {
+    width: 736px;
+    height: 491px;
+
+}
+
+p::selection {
+    color: black;
+    background-color: lightgreen;
+}
+
+::selection {
+    color: white;
+    background-color: red;
+}
+
+p::first-letter {
+    color: blue;
+}

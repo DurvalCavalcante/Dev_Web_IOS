@@ -28,6 +28,11 @@ nav {
     margin-top: 1.5em;
 }
 
+a {
+    text-decoration: none;
+    
+}
+
 .letra, ul, footer, h2 {
     color: #dcf7f3;
 
@@ -53,21 +58,28 @@ nav {
 }
 
 #primeiro {
-    border: 1px solid white;
+    border: 1px solid black;
     padding: 4px;
 
 }
 
 .borda {
-    border: 1px solid white;
+    border: 1px solid black;
     padding: 4px;
     float: left;
 
 }
 
 .borda2 {
-    border: 1px solid white;
+    border: 1px solid black;
     padding: 4px;
     float: right;
+
+}
+
+#bordaAlt {
+    border: 1px solid white;
+    padding: 4px;
+    float: left;
 
 }
