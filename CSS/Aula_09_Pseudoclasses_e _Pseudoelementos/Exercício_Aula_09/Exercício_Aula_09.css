@@ -6,8 +6,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 85vw 100vh;
-   
+    background-size: 89vw 100vh;
+
 }
 
 header {
@@ -34,40 +34,92 @@ fieldset {
 }
 
 footer {
+    background-color: #8C867C;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    padding: 3em;
+    margin: 2.4em;
 }
 
-#bd1 {
-    border: 2px solid white;
-    color: white;
-    background-color: black;
+
+.btnH {
+    border: 2px solid black;
+    color: black;
+    background-color: #C1C2BC;
     text-decoration: none;
     border-radius: 5px;
     margin: 2em;
     padding: 10px;
 }
 
-#bd2 {
-    border: 2px solid white;
-    color: white;
-    background-color: black;
+.btnD {
+    border: 1px solid black;
+    color: black;
+    background-color: #C1C2BC;
     text-decoration: none;
     border-radius: 5px;
-    margin: 2em;
-    padding: 10px;
+    padding: 1px;
+
+}
+
+.btn {
+    border: 2px solid black;
+    color: black;
+    background-color: #C1C2BC;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 4px;
 }
 
 .dir {
     float: right;
     width: 39%;
+    margin: 20px;
+
+
 }
 
 .esq {
-    float: right;
+    float: left;
     width: 39%;
+    margin: 20px;
+
+}
+
+a:hover {
+    background-color: #314A20;
+}
+
+#vd {
+    float: left;
+    margin: 40px;
+
+}
+
+#words {
+    clear: none;
+    padding: 50px;
+    text-align: center;
+    background-color: #8C867C;
+    padding: 8em;
+}
+
+.p {
+    background-color: white;
+    padding: 10px;
+}
+
+#quatroI {
+    background-color: #8C867C;
+    margin: 8em;
+}
+
+.marg {
+    margin: 8em;
 }
 
 #container {
-    padding: 4em;
+    padding: 2em;
 
 }
