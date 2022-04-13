@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+body {
+    background-color: #725436;
+    background-image: url(JPG/Fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 85vw 100vh;
+   
+}
+
+header {
+    background-image: url(JPG/VD.png);
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    margin: 4em;
+    padding: 30px;
+}
+
+img {
+    width: 560px;
+    height: 315px;
+
+}
+
+fieldset {
+    padding: 2em;
+    margin: 4em;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+#bd1 {
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 2em;
+    padding: 10px;
+}
+
+#bd2 {
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 2em;
+    padding: 10px;
+}
+
+.dir {
+    float: right;
+    width: 39%;
+}
+
+.esq {
+    float: right;
+    width: 39%;
+}
+
+#container {
+    padding: 4em;
+
+}
