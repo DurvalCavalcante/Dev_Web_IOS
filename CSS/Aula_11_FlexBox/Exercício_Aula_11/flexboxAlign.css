@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+h1 {
+    text-shadow: 3px 3px 5px black;
+    color: white;
+    text-align: center;
+    background-image: url(JPG/Fundo_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 400%;
+    margin: 0em, 5em, 5em;   
+}
+
+body {
+    background-image: url(JPG/Fundo_1.png);
+    background-position: center;
+    background-attachment: fixed;
+    padding: 2em;
+}
+
+#img {
+    margin-left: 50px;
+}
+
+p::first-letter {
+    font-size: 200%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container div {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.item-box-1 {
+    flex: 3;
+    order: 3;
+    font-size: 1.2em;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.item-box-2 {
+    flex: 1;
+    order: 4;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.item-box-3 {
+    flex: 1;
+    order: 5;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.item-box-4 {
+    flex: 1;
+    order: 2;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.item-box-5 {
+    flex: 1;
+    order: 1;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.grafo {
+    background-color: rgba(255, 228, 196, 0.527);
+
+}

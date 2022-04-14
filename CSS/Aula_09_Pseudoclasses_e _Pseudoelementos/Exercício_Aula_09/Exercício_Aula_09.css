@@ -17,7 +17,7 @@ header {
     text-align: center;
     border-radius: 10px;
     color: white;
-    margin: 4em;
+    margin: 6em;
     padding: 30px;
 }
 
@@ -39,9 +39,51 @@ footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5em;
     padding: 3em;
-    margin: 2.4em;
+    margin: 3.8em;
+    margin-bottom: 0em;
+    
 }
 
+footer::before {
+    content: "2022 ©️";
+}
+
+footer::after {
+    content: "Durval Cavalcante";
+}
+
+.letra::first-letter {
+    font-size: 200%;
+    color: #314A20;
+}
+
+#be1::before {
+    content: "Data do Primeiro Episódio:  ";
+    color: #314A20;
+    font-size: 1.3em;
+
+}
+
+#be2::before {
+    content: "Rede Inglesa:  ";
+    color: #314A20;
+    font-size: 1.3em;
+
+}
+
+#be3::before {
+    content: "Adaptação:  ";
+    color: #314A20;
+    font-size: 1.3em;
+
+}
+
+#be4::before {
+    content: "Rede Original:  ";
+    color: #314A20;
+    font-size: 1.3em;
+
+}
 
 .btnH {
     border: 2px solid black;
@@ -93,14 +135,13 @@ a:hover {
 
 #vd {
     float: left;
-    margin: 40px;
+    margin:26px;
 
 }
 
 #words {
     clear: none;
     padding: 50px;
-    text-align: center;
     background-color: #8C867C;
     padding: 8em;
 }
@@ -117,9 +158,4 @@ a:hover {
 
 .marg {
     margin: 8em;
-}
-
-#container {
-    padding: 2em;
-
 }
