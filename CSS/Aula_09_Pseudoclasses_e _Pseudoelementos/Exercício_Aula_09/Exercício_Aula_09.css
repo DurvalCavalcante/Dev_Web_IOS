@@ -45,7 +45,7 @@ footer {
 }
 
 footer::before {
-    content: "2022 ©️";
+    content: "2022 \00A9";
 }
 
 footer::after {
