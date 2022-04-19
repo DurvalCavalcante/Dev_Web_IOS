@@ -129,8 +129,8 @@ footer::after {
 
 }
 
-a:hover {
-    background-color: #314A20;
+img:hover {
+    opacity: 0.5;
 }
 
 #vd {
