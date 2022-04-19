@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+body {
+    background-image: url(JPG/fundo.jpg);
+}
+
+header {
+    background-color: #e9e4bb;
+    margin: 0em 2em 3em 2em;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    text-shadow: 3px 3px 5px lightcyan;
+    font-size: 30px;
+
+}
+
+img {
+    width: 96%;
+    height: 96%;
+    border-radius: 30px;    
+}
+
+p {
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-gap: 1em;
+    /* Espaciamento entre as tag */
+    overflow-x: hidden;
+}
+
+.container>article {
+    background: #e9e4bbe3;
+    border-radius: 30px;
+    padding: 1em;
+}
