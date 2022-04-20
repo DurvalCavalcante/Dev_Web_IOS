@@ -4,7 +4,7 @@ h1 {
     text-shadow: 3px 3px 5px black;
     color: white;
     text-align: center;
-    background-image: url(JPG/Fundo_2.jpg);
+    background-image: url(IMG/Fundo_2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     line-height: 400%;
@@ -17,7 +17,7 @@ h2 {
 }
 
 body {
-    background-image: url(JPG/Fundo_1.png);
+    background-image: url(IMG/Fundo_1.png);
     background-position: center;
     background-attachment: fixed;
     padding: 2em;

@@ -2,7 +2,7 @@
 
 body {
     background-color: #725436;
-    background-image: url(JPG/Fundo.jpg);
+    background-image: url(IMG/Fundo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-image: url(JPG/VD.png);
+    background-image: url(IMG/VD.png);
     background-position: center;
     background-size: contain;
     text-align: center;

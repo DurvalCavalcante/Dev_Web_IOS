@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-    background-image: url(JPG/Fundo.jpg);
+    background-image: url(IMG/Fundo.jpg);
     background-attachment: fixed;
     background-position: center;
     font-weight: 800;
@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-image: url(JPG/Header.png);
+    background-image: url(IMG/Header.png);
     background-position: center;
     background-size: contain;
     line-height: 300%;
