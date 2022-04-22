@@ -9,73 +9,200 @@
 
 </head>
 
-<body>
-    <nav class="navbar navbar-light bg-warning">
+<body class="p-3" style="background-image: url(IMG/BackGround.png); background-attachment: fixed;">
+    <nav class="navbar  navbar-expand-lg navbar-light" style="background-image: url(IMG/Nav.png);">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="IMG/IMG_Nav.jpg" alt="" width="90" height="60" class="d-inline-block align-text-right">Dragon
+            <a class="navbar-brand text-white" href="#">
+                <img src="IMG/IMG_Nav.jpg" alt="" width="90" height="60" class="d-inline-block align-text-right"
+                    style="clip-path: circle();">Dragon
                 Ball Z
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
 
-                <span class="navbar-toggler-icon"></span>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
 
-            </button>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <div class="collapse navbar-collapse fw-bold" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Início</a>
 
-                    </li>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Personagens</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Personagens</a>
 
-                    </li>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Ep
-                        </a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Ep.
+                            </a>
 
-                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">DBGT</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">DBGT</a></li>
 
-                            <li><a class="dropdown-item" href="#">DBZ</a></li>
+                                <li><a class="dropdown-item" href="#">DBZ</a></li>
 
-                        </ul>
+                            </ul>
 
-                    </li>
+                        </li>
 
-                </ul>
+                    </ul>
+
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+
+                        <button class="btn btn-dark" type="submit">Procurar</button>
+
+                    </form>
+
+                </div>
 
             </div>
+
 
         </div>
 
     </nav>
 
-    <header class="p-5 bg-secondary ">
+    <header class="mt-4 p-5 bg-warning fw-bold">
         <div class="container-fluid py-5">
             <h1 class="display-5 fw-bold">Dragon Ball Z</h1>
 
-            <p class="col-md-8 fs-4">Dragon Ball Z (ドラゴンボールZ Doragon Bōru Zetto?) (geralmente abreviado como DBZ) foi uma série de animação produzida pela Toei Animation. Baseada na série de mangá Dragon Ball escrita por Akira Toriyama, Dragon Ball Z corresponde aos volumes 17 ao 42 do mangá que foi publicado na revista, Weekly Shonen Jump, de 1988 a 1995, e estreou no Japão na Fuji TV em 26 de abril de 1989, e terminou dia 31 de janeiro de 1996 com o total de 291 episódios, antes de ser dublada em diversos territórios ao redor do globo, incluindo Estados Unidos, Austrália, Europa, Índia e América Latina. A série já foi exibida em mais de 80 países ao redor do mundo.
+            <p class="col-md-8 fs-4">Dragon Ball Z (ドラゴンボールZ Doragon Bōru Zetto?) (geralmente abreviado como DBZ) foi
+                uma série de animação produzida pela Toei Animation. Baseada na série de mangá Dragon Ball escrita por
+                Akira Toriyama, Dragon Ball Z corresponde aos volumes 17 ao 42 do mangá que foi publicado na revista,
+                Weekly Shonen Jump, de 1988 a 1995, e estreou no Japão na Fuji TV em 26 de abril de 1989, e terminou dia
+                31 de janeiro de 1996 com o total de 291 episódios, antes de ser dublada em diversos territórios ao
+                redor do globo, incluindo Estados Unidos, Austrália, Europa, Índia e América Latina. A série já foi
+                exibida em mais de 80 países ao redor do mundo.
             </p>
 
-            <a class="btn btn-warning btn-sm" href="https://pt.wikipedia.org/wiki/Dragon_Ball_Z" role="button" target="_blank">Saiba Mais</a>
+            <a class="btn btn-primary btn-lg" href="https://pt.wikipedia.org/wiki/Dragon_Ball_Z" role="button"
+                target="_blank">Saiba Mais</a>
 
         </div>
 
     </header>
+
+    <!-- Tipografia e Alinhamento-->
+    <section class="container text-center fw-bold bg-warning">
+        <h1 class="pb-2 mt-4 mb-2 border-bottom">História</h1>
+
+        <p class="lead text-center text-uppercase text-primary">
+            <mark><u>Produção da História:</u></mark> O título foi escolhido pelo autor do anime Akira Toriyama. Z foi
+            usado no anime para separar a
+            infância e a vida adulta do protagonista da série Goku outros nomes estavam em pauta antes de "Z" ser
+            escolhido, sendo eles: Dragon Ball: A Aventura de Gohan, New Dragon Ball, Dragon Ball 2, Wonder Boy Dragon
+            Ball e Dragon Ball 90.
+
+        </p>
+
+        <p class="text-center">
+            Sua história se divide em quatro sagas, ao longo da série podemos ver o crescimento dos personagens e o
+            desenvolvimento de seus poderes, também o surgimento de novas raças como os Saiyajins e suas transformações.
+            O enredo é situado 5 anos após o final da série anterior, com Goku já adulto, casado com Chichi e os dois
+            têm um filho chamado Gohan, ele conhece o seu irmão Raditz que o informa que ambos são membros de uma raça
+            extraterrestre chamada Saiyajins (サイヤ人, Saiya-jin), esta raça enviou Goku ainda um bebê para o Planeta
+            Terra, com o objetivo de conquistá-la, mas após aterrissar ele cai em um abismo e se esquece de sua missão.
+            Ele se nega a ajudar Raditz e confronta ele e outros inimigos, ele conhece Vegeta, o príncipe da raça
+            Saiyajin, que se torna seu rival e mais tarde seu aliado, Goku cria muitos inimigos ao longo da série como o
+            tirano galáctico Freeza, o responsável pela destruição dos Saiyajins e trava uma batalha no Planeta
+            Namekusei se transformando em Super Saiyajin e derrota-o, mas Freeza sobreviveu a isto graças ao seu pai Rei
+            Cold, os dois vão para a Terra em busca de Goku, ao chegarem lá se deparam com um jovem que afirma que Goku
+            não é o único a se transformar em Super Saiyajin, em poucos segundos ele elimina o pequeno exército de
+            Freeza, o próprio Freeza e seu pai, Rei Cold. Três horas depois Goku chega o jovem o avisa que em três anos
+            eles enfrentarão dois seres muito poderosos. Anos depois um grupo de Androides do exército Força Red Ribbon,
+            aparecem buscando eliminar Goku, mais tarde surge uma criatura chamada Cell, que procura absorver os
+            Androides, ao fazer isso seus poderes aumentam e organiza um torneio, que irá decidir o destino da Terra,
+            porém Gohan que se transformou em Super Saiyajin 2 vence o combate. Sete anos mais tarde, Goku entra em
+            outra batalha pelo bem do universo desta vez, contra um inimigo mágico chamado Majin Boo, com a ajuda de
+            Vegeta e dos Guerreiros Z, ele destrói Kid Boo, e a parte boa do mesmo se une a eles. Dois anos após a
+            derrota de Kid Boo, acontece os eventos de Dragon Ball Super (separado de Dragon Ball Z). Dez anos depois,
+            em outro Torneio de Artes Marciais, Goku encontra Oob a reencarnação de Boo, depois de lutar contra ele e
+            ver seu potencial, Goku o leva embora em uma jornada para treiná-lo como próximo protetor da Terra, acabando
+            a série Dragon Ball Z e iniciando Dragon Ball GT.
+
+        </p>
+
+        <hr>
+
+    </section>
+
+    <!-- Blockquuote -->
+    <section class="container bg-warning">
+        <blockquote class="blockquote">
+
+            <p>"Kamehameha".</p>
+            <figcaption class="blockquote-footer">
+                <cite title="Source Title">A famosa frase de Goku em Dragon Ball Z</cite>
+
+            </figcaption>
+
+        </blockquote>
+
+        <hr>
+
+    </section>
+
+    <!-- Listas -->
+    <section class="container fw-bold bg-warning">
+        <h2 class="pb-2 mt-4 mb-4">Personagens:</h2>
+
+        <ul class="list-unstyled">
+            <img src="IMG/Goku.jpg" alt="goku" width="401" height="251">
+            <li class="mb-1 text-primary">Goku</li>
+
+            <img src="IMG/Vegeta.jpg" alt="vegeta" width="401" height="251">
+            <li class="mb-1 text-primary">Vegeta</li>
+
+            <img src="IMG/Piccolo.png" alt="piccolo" width="401" height="251">
+            <li class="mb-1 text-primary">Piccolo</li>
+
+            <img src="IMG/Freeza.png" alt="freeza" width="401" height="251">
+            <li class="mb-1 text-danger">Freeza</li>
+
+            <img src="IMG/Mestre-kame.jpg" alt="mestreKame" width="401" height="251">
+            <li class="mb-1 text-danger">Mestre Kame</li>
+
+            <img src="IMG/Kuririn.jpg" alt="kuririn" width="401" height="251">
+            <li class="mb-1 text-danger">Kuririn</li>
+
+        </ul>
+
+        <a class="btn btn-outline-primary btn-sm" href="https://dragonball.fandom.com/pt-br/wiki/Categoria:Personagens"
+            role="button" target="_blank">Mais Personagens Aqui!</a>
+
+        <hr>
+
+    </section>
+
+    <!-- Código -->
+    <section class="container fw-bold bg-warning">
+        O elemento <kbd><code>&lt;main&gt;</code></kbd> define o conteúdo principal dentro do
+        <kbd><code>&lt;body&gt;</code></kbd> em seu documento ou aplicação. Entende-se como conteúdo principal aquele
+        relacionado diretamente com o tópico central da página ou com a funcionalidade central da aplicação. O mesmo
+        deverá ser único na página, ou seja, dentro do elemento <kbd><code>&lt;main&gt;</code></kbd> não deverão ser
+        incluidas seções da página que sejam comuns a todo o site ou aplicação, tais como mecanismos de navegação,
+        informações de copyright, logotipo e campos de busca (a não ser, é claro, caso a função principal do documento
+        seja fazer algum tipo de busca).
+
+        <hr>
+
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
         </script>
 
 </body>
+
+<figure></figure>
 
 </html>
