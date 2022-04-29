@@ -1,0 +1,39 @@
+Informações:
+(AND) - As duas suposições tem que ser verdadeiras;
+(OR) - Uma das suposições tem que ser verdadeira;
+(NOT) - É o contrário de uma suposição verdadeira ou falsa.
+
+
+
+1)
+
+Joana - 2° - Gato
+Yara  - 4° - Cachorro
+Kelly - 1° - Passarinho
+Bete  - 3° - Tartaruga
+
+Resposta: Letra " F "
+
+2)
+
+|  P "OR" Q  |  P "AND" Q  |  P "NOT"  |     
+|      V     |      V      |     F     |
+|      V     |      F      |     F     |
+|      V     |      F      |     V     |
+|      F     |      F      |     V     |
+
+3)
+
+Gato = Quarto,Sótão
+Rato = Toca, Quarto
+Queijo = Geladeira,Mesa
+
+Resposta: Então o Gato vai está no Sótão, e o Rato no Quarto.
+
+4)
+
+|    -     | Nome    | Idade |  Animal    | Maiô    | Suco     | FPS   |
+|Menina #1 | Raquel  |  11   |  Gatos     | Braco   | Laranja  | 45    |
+|Menina #2 | Vivian  |  10   |  Pássaros  | Azul    | Limonada | 55    |
+|Menina #3 | Bruna   |  9    |  Cachorros | Amarelo | Maracujá | 40    |
+|Menina #4 | Ana     |  8    |  Peixes    | Verde   | Morango  | 50    |
