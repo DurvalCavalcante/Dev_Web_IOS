@@ -44,8 +44,8 @@ console.clear();
 
 //Criando Evento onload
 const boasVindas = () => {
-    alert('Bem-Vindo a nossa Pagina');
-    console.log('Bem-Vindo a nossa Pagina');
+    alert('Bem-Vindo a nossa Página');
+    console.log('Bem-Vindo a nossa Página');
 };
 
 //Criando Evento onclick
