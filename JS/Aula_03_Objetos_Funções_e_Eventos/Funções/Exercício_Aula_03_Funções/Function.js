@@ -8,8 +8,8 @@ function alertCookie() {
 //Gerando Alerta com Arrow Function
 
 const alertSucesso = () => {
-    alert('Mensage gerada com sucesso!');
-    console.log('Mensage gerada com sucesso!');
+    alert('Mensagem gerada com sucesso!');
+    console.log('Mensagem gerada com sucesso!');
 };
 
 //Criando um Objeto
@@ -30,5 +30,5 @@ const soma = (ano = 3, dia = 365) => {
     return ano * dia;
 };
 
-console.log('Resultado da conversão de anos para dia:')
+console.log('Resultado da conversão de anos para dia:');
 console.log(soma());
