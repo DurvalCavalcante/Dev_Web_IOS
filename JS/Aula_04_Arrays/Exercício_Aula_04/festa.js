@@ -18,25 +18,25 @@ console.log(`Convidados: ${convidados}`);
 console.log('\n+ Zuleica entrou na festa');
 let z = convidados.push('Zuleica');
 
-console.log('* lista Atualizada');
+console.log('* Lista Atualizada');
 console.log(`Convidados: ${convidados}`);
 
 console.log('\n- Amanda saiu da festa');
 let aA = convidados.shift();
 
-console.log('* lista Atualizada');
+console.log('* Lista Atualizada');
 console.log(`Convidados: ${convidados}`);
 
 console.log('\n- Silva saiu da festa');
 delete  convidados[2];
 
-console.log('* lista Atualizada');
+console.log('* Lista Atualizada');
 console.log(`Convidados: ${convidados}`);
 
 console.log('\n+ Entrou Silvana na festa');
 convidados[2] = 'Silvana';
 
-console.log('* lista Atualizada');
+console.log('* Lista Atualizada');
 console.log(`Convidados: ${convidados}`);
 
-console.log(`\nFicaram ${convidados} 4 Convidados e Sairam 3 Convidados.`);
+console.log(`\nFicaram: (${convidados}) 4 Convidados e Sairam: (Amanda, Silva, Xavier) 3 Convidados.`);
