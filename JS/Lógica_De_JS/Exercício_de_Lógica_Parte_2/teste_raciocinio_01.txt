@@ -1,0 +1,17 @@
+  Músicos   | Pianista  | Violinista  | Saxofonista  | Baterista  |
+- Alberto   |    X            V              X             X      
+- Bernardo  |    X            X              V             X      
+- Custódio  |    X            X              X             V
+- Danilo    |    V            X              X             X
+
+- Pianista (Danilo);
+- Saxofonista (Bernardo);
+- Baterista (Custódio);
+- Violinista (Alberto).
+
+A resposta correta é a letra 'A'.
+
+* Alberto e Custódio não pode ser o Saxofonista;
+* O Bernardo não pode ser o Pianista;
+* Danilo não pode ser o Baterista, Alberto não pode ser o Baterista;
+* Aberto nunca conheceu Custódio.

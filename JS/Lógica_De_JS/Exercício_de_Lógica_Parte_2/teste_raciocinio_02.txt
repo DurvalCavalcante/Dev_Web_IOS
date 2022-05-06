@@ -1,0 +1,7 @@
+* Homem                    * Mulher
+
+- Henrique;                - Isabela;
+- Pedro;                   - Joana;
+- Luís;                    - Maria;
+- Rogério.                 - Ana.
+
