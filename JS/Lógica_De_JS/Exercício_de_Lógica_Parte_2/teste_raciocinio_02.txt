@@ -5,3 +5,34 @@
 - Luís;                    - Maria;
 - Rogério.                 - Ana.
 
+
+Maria não é esposa de Pedro.
+
+Maria está cantando;
+Ana está conversando;
+Pedro toca piano;
+Rogério Conversa.
+
+Quem pode está dançando:
+
+- Isabel, 
+- Joana,
+- Henrique,
+- Luís.
+
+_______  Henrique | Pedro | Luís | Rogério |
+Isabel |    X     |   X   |   V  |    X    |
+Joana  |    V     |   X   |   X  |    X    |
+Maria  |    X     |   X   |   X  |    V    |
+Ana    |    X     |   V   |   X  |    X    |
+
+
+Casais:
+
+- Luís x Isabel
+
+- Henrique x Joana
+
+- Maria x Rogério
+
+- Pedro x Ana
