@@ -4,6 +4,7 @@ const alunos = [
     {
         nome: 'João',
         sobrenome: 'Da Silva',
+        sala: 3,
         nota: [8, 9, 7, 6],
         media: (8 + 9 + 7 + 6) / 4,
         endereco: {
@@ -16,6 +17,7 @@ const alunos = [
     {
         nome: 'Daniel',
         sobrenome: 'Do Nascimento',
+        sala: 3,
         nota: [6, 8, 6, 6],
         media: (6 + 8 + 6 + 6) / 4,        
         endereco: {
@@ -28,6 +30,7 @@ const alunos = [
     {
         nome: 'Priscila',
         sobrenome: 'De Lima',
+        sala: 3,
         nota: [8, 8, 6, 6],
         media: (8 + 8 + 6 + 6) / 4,
         endereco: {
