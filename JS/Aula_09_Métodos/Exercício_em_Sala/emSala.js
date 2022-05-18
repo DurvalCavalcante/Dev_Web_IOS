@@ -37,11 +37,10 @@ const alunos = [
 console.log('Nome de todos os Alunos(as):');
 alunos.forEach((nomeAlunos) => console.log(`\nAlunos(as): ${nomeAlunos.nome}`));
 
-const notasAlunos = alunos.filter((notas) => {
+console.log(alunos.filter((notas) => {
     return notas.nota >= 6;
 })
-
-console.log(notasAlunos);
+);
 
 console.log(
     alunos.find((menor) => {
