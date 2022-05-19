@@ -1,25 +1,3 @@
-// Exercício 1
-
-console.log('\t--- Exercício 1 ---');
-console.log('\n> Números Pares e Ímpares');
-
-const posicoes = [17, 43, 8, 4, 56, 29];
-posicoes.forEach(numeros)
-
-function numeros(index) {
-    if (index % 2 == 0) console.log(`\nNúmero par: ${index}`);
-
-    else if (index % 2 != 0) console.log(`\nNúmero ímpar: ${index}`);
-};
-
-console.log('\n> Números que são menores ou iguais a 18')
-
-posicoes.filter((index) => {
-    if (index <= 18) {
-        console.log(`\nNúmeros: ${index}`)
-    }
-})
-
 // Exercício 2
 
 const alunos = [
@@ -67,4 +45,17 @@ const alunos = [
 ]
 
 console.log('\n\t--- Exercício 2 ---');
+
 alunos.forEach((retornado) => console.log(`\nAlunos(as): ${retornado.nome} do Ano: ${retornado.ano}`))
+
+console.log('\n--> Retornando os alunos do Segundo Ano:');
+
+let segundo = alunos.filter((alunos) => {
+    if (alunos.ano == '2°B' || alunos.ano == '2°C') {
+        console.log(alunos);
+    }
+})
+
+const soma = (alunos[0].nota + alunos[1].nota + alunos[2].nota + alunos[3].nota + alunos[4].nota + alunos[5].nota) / 6;
+
+console.log(`\n--> O resultado da média dos alunos é: ${soma}`);
