@@ -53,6 +53,9 @@ function clicar_03() {
 
     do {
         console.log(`\n${receber} X ${contador[0]} = ${receber * contador[0]}`);
+        tabuada.innerHTML += `${receber} X ${contador[0]} = <strong>${receber * contador[0]}<strong></br>`
         contador[0]++
+
     } while (contador[0] <= 10);
 }
+
