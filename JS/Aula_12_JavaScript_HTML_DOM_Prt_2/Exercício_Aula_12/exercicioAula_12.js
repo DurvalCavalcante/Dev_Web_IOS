@@ -47,7 +47,8 @@ function clicar_02() {
 
     paragrafo.innerHTML = `Olá ${promptName}, Bem-vindo a nossa Academia!`;
     sectionNome.appendChild(paragrafo);
-    paragrafo.style.color = 'white';
+    paragrafo.style.background = '#e8e0ae';
+    paragrafo.style.fontSize = '1.8em'
 }
 
 id_3.addEventListener('click', clicar_03);
@@ -68,7 +69,7 @@ function clicar_03() {
     let h2 = document.createElement('h2');
     h2.innerText = `Resultado da Tabuada de ${receber}`;
     sectionTabuada.appendChild(h2);
-
+    sectionTabuada.style.background = '#e8e0ae'
 
     do {
         console.log(`\n${receber} X ${contador[0]} = ${receber * contador[0]}`);
