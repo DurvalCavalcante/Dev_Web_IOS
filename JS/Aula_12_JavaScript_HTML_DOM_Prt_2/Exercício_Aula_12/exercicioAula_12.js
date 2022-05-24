@@ -64,6 +64,12 @@ function clicar_03() {
         return;
     }
 
+    let sectionTabuada = document.getElementById('tabuada');
+    let h2 = document.createElement('h2');
+    h2.innerText = `Resultado da Tabuada de ${receber}`;
+    sectionTabuada.appendChild(h2);
+
+
     do {
         console.log(`\n${receber} X ${contador[0]} = ${receber * contador[0]}`);
         tabuada.innerHTML += `${receber} X ${contador[0]} = <strong>${receber * contador[0]}<strong></br>`
