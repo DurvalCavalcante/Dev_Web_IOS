@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/formulario.css">
+    <title>Exercício Aula 14 de JS</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Novos Clientes</h1>
+    </header>
+
+    <section id="container">
+        <form id="formulario">
+            <h1>Adicione aqui em baixo algumas infomações:</h1>
+
+            <div class="divNome"></div>
+
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required />
+            </div>
+
+            <div class="divDataNas"></div>
+
+            <div>
+                <label for="dataNas">Data de Nascimento:</label>
+                <input type="text" id="dataNas" required />
+            </div>
+
+            <div class="divEmail"></div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <input type="text" id="email" required />
+            </div>
+
+            <div class="divItem"></div>
+
+            <div>
+                <label for="item">Item:</label>
+                <input type="text" id="item">
+            </div>
+
+            <input class="btn1" type="submit" value="Incluir" />
+            <input class="btn2" type="submit" value="Excluir" />
+        </form>
+
+        <ul id="lista"></ul>
+
+    </section>
+
+    <script src="JS/formulario.js"></script>
+</body>
+
+</html>
