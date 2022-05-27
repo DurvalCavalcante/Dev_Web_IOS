@@ -51,7 +51,7 @@ function confirmandoIdade() {
     if (data.getMonth() < age.getMonth()) idade--;
     else if (data.getMonth() == age.getMonth() && data.getDate() < age.getDate() + 1) idade--;
 
-    // Validando o idade
+    // Validando a idade
     if (idade < 18) {
         alert('Você é menor de idade.\nEsse site é só para maiores de 18 anos');
         return false;
@@ -68,13 +68,12 @@ function validandoEmail() {
     return false;
 }
 
-// let formulario2 = document.getElementById('myForm2');
-// formulario2.addEventListener('submit', onRemovendo);
+let formulario2 = document.getElementById('my-form2');
+formulario2.addEventListener('click', onRemovendo);
 
-// function onRemovendo(e) {
-//     e.preventDefault();
-//     let usuario = lista.querySelector('li');
-//     let valor = parseInt[item.value];
-//     let li = usuario[valor];
-//     li.remove();
-// }
+function onRemovendo() {
+    let usuario = lista.getElementById('li');
+    let valor = parseInt[item.value];
+    let li = usuario[valor];
+    li.remove();
+}

@@ -76,33 +76,6 @@ header {
     border: 2px solid #ccc;
 }
 
-#my-form2 {
-    padding: 2rem;
-    background: #688a7c;
-    border: 3px solid #000;
-    border-radius: 20px;
-}
-
-#my-form2 label {
-    display: block;
-}
-
-#my-form2 input[type='number'] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    border: 2px solid #ccc;
-}
-
-#my-form2 select {
-    width: 20%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    border: 2px solid #ccc;
-}
-
 .btn1 {
     display: block;
     margin: 5px 0;

@@ -35,34 +35,28 @@ const itens = [
     }
 ];
 
-const valores = [
-    ['Arroz', '6,00'],
-    ['Feijão', '7,00'],
-    ['Macarrão', '4,00'],
-    ['Leite', '8,00'],
-    ['Açucar', '5,00'],
-];
+
 
 formAdd.addEventListener('submit', addItem);
 
 function addItem(e) {
     e.preventDefault();
 
-    let itens = document.getElementById('item').value;
+    let itensAdd = document.getElementById('item').value;
     let li = document.createElement('li');
     li.classList = 'list-group-item';
-    li.appendChild(document.createTextNode(itens));
+    li.appendChild(document.createTextNode(itensAdd));
 
     let deletarBtn = document.createElement('button');
-    deletarBtn.className = 'btn btn-danger btn-sm float-end deletar';
+    deletarBtn.className = 'btn btn-danger m-2 btn-sm float-end deletar';
     deletarBtn.appendChild(document.createTextNode('X'));
 
     let adicionarBtn = document.createElement('button');
-    adicionarBtn.className = 'btn btn-success btn-sm float-end adicionar';
+    adicionarBtn.className = 'btn btn-success m-2 btn-sm float-end adicionar';
     adicionarBtn.appendChild(document.createTextNode('+'));
 
     let diminuirBtn = document.createElement('button');
-    diminuirBtn.className = 'btn btn-danger btn-sm float-end diminuir';
+    diminuirBtn.className = 'btn btn-secondary m-2 btn-sm float-end diminuir';
     diminuirBtn.appendChild(document.createTextNode('-'));
 
     li.appendChild(deletarBtn);
