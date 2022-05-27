@@ -8,10 +8,10 @@ const myForm = document.getElementById('my-form');
 const nomeInput = document.getElementById('nome');
 const emailInput = document.getElementById('email');
 const dataInput = document.getElementById('dataNas');
-const itemInput = document.getElementById('item');
+const itemInput = document.getElementById('itensInput');
 const botao1 = document.getElementsByClassName('btn1');
 const botao2 = document.getElementsByClassName('btn2');
-const divNome = document.getElementsByClassName('divNome');
+const divEmail = document.getElementsByClassName('divEmail');
 const lista = document.getElementById('lista');
 
 myForm.addEventListener('submit', onAdd);
@@ -26,17 +26,13 @@ function onAdd(e) {
         return
     }
     if (nomeInput.value === '' || emailInput.value === '') {
-        divNome.classList.add('erro');
-        divNome.innerHTML = 'Por favor, preencha os dados.';
-        setTimeout(() => divNome.innerHTML = '', 4000);
+        divEmail.classList.add('erro');
+        divEmail.innerHTML = 'Por favor, preencha os dados.';
+        setTimeout(() => divEmail.innerHTML = '', 4000);
     }
     else {
         const li = document.createElement('li');
-        li.appendChild(
-            document.createTextNode(
-                `${nomeInput.value} : ${emailInput.value} : ${dataInput.value}`
-            )
-        );
+        li.innerHTML = `${nomeInput.value} : ${emailInput.value} : ${dataInput.value}`;
         lista.appendChild(li);
         nomeInput.value = '';
         emailInput.value = '';
@@ -59,6 +55,7 @@ function confirmandoIdade() {
     return true;
 }
 
+//  validando o e-mail
 function validandoEmail() {
     let padrao = new RegExp(/.*@.*\..*/i);
     if (padrao.test(emailInput.value)) {
@@ -68,12 +65,13 @@ function validandoEmail() {
     return false;
 }
 
-let formulario2 = document.getElementById('my-form2');
-formulario2.addEventListener('click', onRemovendo);
+let excluindoBtn = document.getElementById('btnExcluir');
+excluindoBtn.addEventListener('click', onRemovendo)
 
+// Excluindo os itens da lista
 function onRemovendo() {
-    let usuario = lista.getElementById('li');
-    let valor = parseInt[item.value];
+    let usuario = lista.getElementsByTagName('li');
+    let valor = parseInt(itemInput.value);
     let li = usuario[valor];
     li.remove();
 }

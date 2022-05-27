@@ -22,8 +22,6 @@
                 <input type="text" id="nome" required />
             </div>
 
-            <div class="divDataNas"></div>
-
             <div>
                 <label for="dataNas">Data de Nascimento:</label>
                 <input type="date" id="dataNas" required />
@@ -36,14 +34,21 @@
 
             <div id="divEmail"></div>
 
+            <h2>Adicione aqui o número da lista que deseja excluir:</h2>
+
+            <div>
+                <label for="itensInput"></label>
+                <input type="text" id="itensInput">
+            </div>
+
             <input class="btn1" type="submit" value="Incluir" />
-            <input class="btn2" type="button" value="Excluir" />
+            <input class="btn2" id="btnExcluir" type="button" value="Excluir" />
         </form>
 
-        <section class="container">
+        <section class="container2">
             <h2>Lista dos adicionados:</h2>
 
-            <ul id="lista"></ul>
+            <ol start="0" id="lista"></ol>
         </section>
 
     </section>

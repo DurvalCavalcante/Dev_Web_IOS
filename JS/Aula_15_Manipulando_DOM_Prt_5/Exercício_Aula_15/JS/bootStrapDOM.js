@@ -1,7 +1,12 @@
-let formAdd = document.getElementById('addForm');
-let itemList1 = document.getElementById('items1');
-let itemList2 = document.getElementById('items2');
-let filter = document.getElementById('filter');
+const formAdd = document.getElementById('addForm');
+const itemList1 = document.getElementById('itens1');
+const itemList2 = document.getElementById('itens2');
+const filter = document.getElementById('filter');
+const input1 = document.getElementById('item1');
+const input2 = document.getElementById('item2');
+const input3 = document.getElementById('item3');
+const listaCarrinho = document.getElementById('listaCarrinho');
+
 
 const itens = [
     {
@@ -35,17 +40,18 @@ const itens = [
     }
 ];
 
-
-
 formAdd.addEventListener('submit', addItem);
 
+// Adicionando Itens
 function addItem(e) {
     e.preventDefault();
 
-    let itensAdd = document.getElementById('item').value;
+    let itensAdd = document.getElementById('item1').value;
+    let quantidadeAdd = document.getElementById('item2').value;
+    let valorAdd = document.getElementById('item3').value;
     let li = document.createElement('li');
     li.classList = 'list-group-item';
-    li.appendChild(document.createTextNode(itensAdd));
+    li.appendChild(document.createTextNode(`Item: ${itensAdd} \\ Quantidade: ${quantidadeAdd} \\ R$ ${valorAdd},00`));
 
     let deletarBtn = document.createElement('button');
     deletarBtn.className = 'btn btn-danger m-2 btn-sm float-end deletar';
@@ -63,5 +69,17 @@ function addItem(e) {
     li.appendChild(adicionarBtn);
     li.appendChild(diminuirBtn);
     itemList1.appendChild(li);
-    form.reset();
+    input1.value = '';
+    input2.value = '';
+    input3.value = '';
+}
+
+listaCarrinho.addEventListener('click', removeItem);
+
+// Remove Item
+function removeItem(e) {
+    if (e.target.classList.contains('deletar')) {
+        let li = e.target.parentElement;
+        itemList1.removeChild(li);
+    }
 }
