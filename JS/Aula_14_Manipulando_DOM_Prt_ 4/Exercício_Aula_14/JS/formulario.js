@@ -73,5 +73,6 @@ function onRemovendo() {
     let usuario = lista.getElementsByTagName('li');
     let valor = parseInt(itemInput.value);
     let li = usuario[valor];
+    itemInput.value = '';
     li.remove();
 }
