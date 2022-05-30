@@ -16,7 +16,7 @@ function addItem(e) {
     let valorAdd = document.getElementById('item3').value;
     let li = document.createElement('li');
     li.classList = 'list-group-item';
-    li.appendChild(document.createTextNode(`Item: ${itensAdd} \\ \\Quantidade: ${quantidadeAdd}  \\ \\ R$ ${valorAdd},00`));
+    li.innerHTML = `<strong>Item:</strong> ${itensAdd} \\ \\<strong>Quantidade:</strong> ${quantidadeAdd} \\ \\<strong>Valor:</strong> R$ ${valorAdd},00`;
 
     let deletarBtn = document.createElement('button');
     deletarBtn.className = 'btn btn-danger m-2 btn-sm float-end deletar';
@@ -25,6 +25,7 @@ function addItem(e) {
     let adicionarBtn = document.createElement('button');
     adicionarBtn.className = 'btn btn-success m-2 btn-sm float-end adicionar';
     adicionarBtn.appendChild(document.createTextNode('+'));
+    adicionarBtn.addEventListener('click', adicionarQuant);
 
     let diminuirBtn = document.createElement('button');
     diminuirBtn.className = 'btn btn-secondary m-2 btn-sm float-end diminuir';
@@ -50,3 +51,5 @@ function removeItem(e) {
 }
 
 // Adicionando Item
+function adicionarQuant() {
+}
