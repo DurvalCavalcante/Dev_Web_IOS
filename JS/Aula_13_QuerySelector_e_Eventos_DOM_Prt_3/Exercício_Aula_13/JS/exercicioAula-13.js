@@ -1,4 +1,3 @@
-console.log('\t--- Exercício Aula 12 de JS ---');
 document.body.style.background = '#e2d9db'
 
 let botao = document.querySelectorAll('.B_12');
@@ -77,7 +76,6 @@ function clicar_03() {
     sectionTabuada.style.background = '#e8e0ae'
 
     do {
-        console.log(`\n${receber} X ${contador[0]} = ${receber * contador[0]}`);
         tabuada.innerHTML += `${receber} X ${contador[0]} = <strong>${receber * contador[0]}<strong></br>`
         contador[0]++
 
