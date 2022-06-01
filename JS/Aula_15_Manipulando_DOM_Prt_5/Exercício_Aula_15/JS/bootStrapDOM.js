@@ -6,50 +6,67 @@ const input2 = document.getElementById('item2');
 const input3 = document.getElementById('item3');
 const listaCarrinho = document.getElementById('listaCarrinho');
 
-formAdd.addEventListener('submit', addItem);
+formAdd.addEventListener('submit', btnAdd);
 
 // Adicionando Itens
-function addItem(e) {
+function btnAdd(e) {
     e.preventDefault();
     let itensAdd = document.getElementById('item1').value;
     let quantidadeAdd = document.getElementById('item2').value;
     let valorAdd = document.getElementById('item3').value;
     let li = document.createElement('li');
-    li.classList = 'list-group-item';
-    li.innerHTML = `<strong>Item:</strong> ${itensAdd} \\ \\<strong>Quantidade:</strong> ${quantidadeAdd} \\ \\<strong>Valor:</strong> R$ ${valorAdd},00`;
 
-    let deletarBtn = document.createElement('button');
-    deletarBtn.className = 'btn btn-danger m-2 btn-sm float-end deletar';
-    deletarBtn.appendChild(document.createTextNode('X'));
+    if (quantidadeAdd > 0 && valorAdd > 0) {
+        li.classList = 'list-group-item';
+        li.innerHTML = `<strong>Item:</strong> ${itensAdd} \\ \\<strong>Quantidade:</strong> ${quantidadeAdd} \\ \\<strong>Valor:</strong> R$ ${valorAdd * quantidadeAdd},00`;
 
-    let adicionarBtn = document.createElement('button');
-    adicionarBtn.className = 'btn btn-success m-2 btn-sm float-end adicionar';
-    adicionarBtn.appendChild(document.createTextNode('+'));
-    adicionarBtn.addEventListener('click', adicionarQuant);
+        let deletarBtn = document.createElement('button');
+        deletarBtn.className = 'btn btn-danger m-2 btn-sm float-end deletar';
+        deletarBtn.appendChild(document.createTextNode('X'));
+        deletarBtn.addEventListener('click', removeItem);
 
-    let diminuirBtn = document.createElement('button');
-    diminuirBtn.className = 'btn btn-secondary m-2 btn-sm float-end diminuir';
-    diminuirBtn.appendChild(document.createTextNode('-'));
+        let adicionarBtn = document.createElement('button');
+        adicionarBtn.className = 'btn btn-success m-2 btn-sm float-end adicionar';
+        adicionarBtn.appendChild(document.createTextNode('+'));
+        adicionarBtn.addEventListener('click', adicionarItem);
 
-    li.appendChild(deletarBtn);
-    li.appendChild(adicionarBtn);
-    li.appendChild(diminuirBtn);
-    itemList1.appendChild(li);
-    input1.value = '';
-    input2.value = '';
-    input3.value = '';
-}
+        let diminuirBtn = document.createElement('button');
+        diminuirBtn.className = 'btn btn-secondary m-2 btn-sm float-end diminuir';
+        diminuirBtn.appendChild(document.createTextNode('-'));
+        diminuirBtn.addEventListener('click', diminuirItem);
 
-listaCarrinho.addEventListener('click', removeItem);
-
-// Remove Item
-function removeItem(e) {
-    if (e.target.classList.contains('deletar')) {
-        let li = e.target.parentElement;
-        itemList1.removeChild(li);
+        li.appendChild(deletarBtn);
+        li.appendChild(adicionarBtn);
+        li.appendChild(diminuirBtn);
+        itemList1.appendChild(li);
+        input1.value = '';
+        input2.value = '';
+        input3.value = '';
     }
-}
+    else {
+        alert('- Informe um número maior que 0')
+    };
 
-// Adicionando Item
-function adicionarQuant() {
+    // Remove Item
+    function removeItem(e) {
+        if (e.target.classList.contains('deletar')) {
+            let li = e.target.parentElement;
+            itemList1.removeChild(li);
+        }
+    };
+
+    let saveInputNome = itensAdd;
+    let saveInputQuant = Number(quantidadeAdd);
+    let saveInputValor = Number(valorAdd);
+
+    // Adicionando Item
+    function adicionarItem() {
+        li.classList = 'list-group-item';
+        li.innerHTML = `<strong>Item:</strong> ${saveInputNome} \\ \\<strong>Quantidade:</strong> ${saveInputQuant + 1} \\ \\<strong>Valor:</strong> R$ ${saveInputValor * (saveInputQuant + 1)},00`;
+    };
+
+    function diminuirItem() {
+        li.classList = 'list-group-item';
+        li.innerHTML = `<strong>Item:</strong> ${saveInputNome} \\ \\<strong>Quantidade:</strong> ${saveInputQuant - 1} \\ \\<strong>Valor:</strong> R$ ${saveInputValor * (saveInputQuant - 1)},00`;
+    }
 }
