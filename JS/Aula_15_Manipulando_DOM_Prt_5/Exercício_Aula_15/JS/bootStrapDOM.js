@@ -63,6 +63,25 @@ function btnAdd(e) {
     function adicionarItem() {
         li.classList = 'list-group-item';
         li.innerHTML = `<strong>Item:</strong> ${saveInputNome} \\ \\<strong>Quantidade:</strong> ${saveInputQuant + 1} \\ \\<strong>Valor:</strong> R$ ${saveInputValor * (saveInputQuant + 1)},00`;
+
+        let deletarBtn = document.createElement('button');
+        deletarBtn.className = 'btn btn-danger m-2 btn-sm float-end deletar';
+        deletarBtn.appendChild(document.createTextNode('X'));
+        deletarBtn.addEventListener('click', removeItem);
+
+        let adicionarBtn = document.createElement('button');
+        adicionarBtn.className = 'btn btn-success m-2 btn-sm float-end adicionar';
+        adicionarBtn.appendChild(document.createTextNode('+'));
+        adicionarBtn.addEventListener('click', adicionarItem);
+
+        let diminuirBtn = document.createElement('button');
+        diminuirBtn.className = 'btn btn-secondary m-2 btn-sm float-end diminuir';
+        diminuirBtn.appendChild(document.createTextNode('-'));
+        diminuirBtn.addEventListener('click', diminuirItem);
+
+        li.appendChild(deletarBtn);
+        li.appendChild(adicionarBtn);
+        li.appendChild(diminuirBtn);
     };
 
     function diminuirItem() {
