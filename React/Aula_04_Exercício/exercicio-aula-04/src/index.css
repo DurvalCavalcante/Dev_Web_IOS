@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+table{
+  margin-top: 10px;
+  margin-left: 150px;
+  text-align: center;
+}
+
+th {
+  padding: 10px;
+  margin: 10px;
+}
+
+td{
+  padding: 10px;
+  margin: 10px;  
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  border: 2px solid #000;
+  min-height: 300px;
+  padding: 30px;
+  border-radius: 5px;
+}
