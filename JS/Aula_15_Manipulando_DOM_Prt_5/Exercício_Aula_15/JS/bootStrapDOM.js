@@ -16,6 +16,10 @@ function btnAdd(e) {
     let valorAdd = document.getElementById('item3').value;
     let li = document.createElement('li');
 
+    let saveInputNome = itensAdd;
+    let saveInputQuant = Number(quantidadeAdd);
+    let saveInputValor = Number(valorAdd);
+
     if (quantidadeAdd > 0 && valorAdd > 0) {
         li.classList = 'list-group-item';
         li.innerHTML = `<strong>Item:</strong> ${itensAdd} \\ \\<strong>Quantidade:</strong> ${quantidadeAdd} \\ \\<strong>Valor:</strong> R$ ${valorAdd * quantidadeAdd},00`;
@@ -42,6 +46,8 @@ function btnAdd(e) {
         input1.value = '';
         input2.value = '';
         input3.value = '';
+
+        atualizarTotal(saveInputValor * saveInputQuant);
     }
     else {
         alert('- Informe um número maior que 0')
@@ -52,19 +58,17 @@ function btnAdd(e) {
         if (e.target.classList.contains('deletar')) {
             let li = e.target.parentElement;
             itemList1.removeChild(li);
+
+            atualizarTotal(0 - saveInputQuant * saveInputValor)
         };
     };
-
-    let saveInputNome = itensAdd;
-    let saveInputQuant = Number(quantidadeAdd);
-    let saveInputValor = Number(valorAdd);
 
     // Adicionando Item
     function adicionarItem() {
         if (saveInputQuant >= 0 && saveInputQuant <= 100) {
-            let aumentar = saveInputQuant++;
+            // let aumentar = saveInputQuant++;
             li.classList = 'list-group-item';
-            li.innerHTML = `<strong>Item:</strong> ${saveInputNome} \\ \\<strong>Quantidade:</strong> ${aumentar} \\ \\<strong>Valor:</strong> R$ ${saveInputValor * (aumentar)},00`;
+            li.innerHTML = `<strong>Item:</strong> ${saveInputNome} \\ \\<strong>Quantidade:</strong> ${saveInputQuant + 1} \\ \\<strong>Valor:</strong> R$ ${saveInputValor * (saveInputQuant += 1)},00`;
 
             let deletarBtn = document.createElement('button');
             deletarBtn.className = 'btn btn-danger m-2 btn-sm float-end deletar';
@@ -84,6 +88,8 @@ function btnAdd(e) {
             li.appendChild(deletarBtn);
             li.appendChild(adicionarBtn);
             li.appendChild(diminuirBtn);
+
+            atualizarTotal(saveInputValor);
         };
     };
 
@@ -91,7 +97,7 @@ function btnAdd(e) {
         if (saveInputQuant >= 1) {
             let diminuir = saveInputQuant--;
             li.classList = 'list-group-item';
-            li.innerHTML = `<strong>Item:</strong> ${saveInputNome} \\ \\<strong>Quantidade:</strong> ${diminuir - 1} \\ \\<strong>Valor:</strong> R$ ${saveInputValor * (diminuir - 1)},00`;
+            li.innerHTML = `<strong>Item:</strong> ${saveInputNome} \\ \\<strong>Quantidade:</strong> ${diminuir - 1} \\ \\<strong>Valor:</strong> R$ ${saveInputValor * (diminuir -= 1)},00`;
 
             let deletarBtn = document.createElement('button');
             deletarBtn.className = 'btn btn-danger m-2 btn-sm float-end deletar';
@@ -111,6 +117,15 @@ function btnAdd(e) {
             li.appendChild(deletarBtn);
             li.appendChild(adicionarBtn);
             li.appendChild(diminuirBtn);
+
+            atualizarTotal(0 - saveInputValor);
         };
     };
 };
+
+let valorTotal = 0;
+function atualizarTotal(valor) {
+    let li = document.querySelector('#atualizando');
+    valorTotal += valor;
+    li.innerHTML = `R$${valorTotal},00`;
+}

@@ -6,8 +6,7 @@ export class Notas extends Component {
     render() {
         return (
             <div>
-                <h2>Notas do Aluno: {this.props.name}</h2>
-                <table border={2}>
+                <table border={3}>
                     <thead>
                         <tr>
                             <th>N°</th>
@@ -18,22 +17,22 @@ export class Notas extends Component {
 
                     <tbody>
                     <tr>
-                        <td>1</td>
+                        <td>1°</td>
                         <td>{nota[0]}</td>
                     </tr>
 
                     <tr>
-                        <td>2</td>
+                        <td>2°</td>
                         <td>{nota[1]}</td>
                     </tr>
 
                     <tr>
-                        <td>3</td>
+                        <td>3°</td>
                         <td>{nota[2]}</td>
                     </tr>
 
                     <tr>
-                        <td>4</td>
+                        <td>4°</td>
                         <td>{nota[3]}</td>
                     </tr>
 
