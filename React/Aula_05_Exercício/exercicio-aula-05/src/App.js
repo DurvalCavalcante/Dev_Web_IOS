@@ -78,7 +78,7 @@ function App() {
           onToggle={mudarReminder}
         />
       ) : (
-        'Você não tem tarefas, pode tirar férias!'
+        'Você já jogou todos os jogos do mês.'
       )}
 
       <br />
