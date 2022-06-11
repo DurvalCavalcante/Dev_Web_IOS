@@ -1,18 +1,17 @@
-import Jogos from "./Jogos";
+import OpenItem from "./TasksOpenItem";
 
-const TasksOpen = ({games, onDelete, onToggle}) => {
+const TasksOpen = ({ games, onDelete}) => {
     return (
         <>
-        {games.map((games) => (
-            <Jogos
-            key={games.id}
-            games={games}
-            onDelete={onDelete}
-            onToggle={onToggle}
-            />
-        ))}
+            {games.map((games) => (
+                <OpenItem
+                    key={games.id}
+                    games={games}
+                    onDelete={onDelete}
+                />
+            ))}
         </>
-    )
-}
+    );
+};
 
 export default TasksOpen;

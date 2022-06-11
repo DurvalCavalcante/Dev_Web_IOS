@@ -1,6 +1,6 @@
-import NewTasks from "./Components/NewTasks";
-import TaksOpen from "./Components/TasksOpen";
-import { useState } from 'react';
+import { useState } from "react";
+import NewTasks from "./Components/NewTasks"
+import TasksOpen from "./Components/TasksOpen";
 
 function App() {
   const [games, setGames] = useState([
@@ -50,40 +50,27 @@ function App() {
       plataforma: 'Microsoft Windows',
       ano: '2 de junho de 2020',
       reminder: false,
-    }
+    },
   ]);
 
   // Deletar tarefa
-  const deletaTarefa = (id) => {
-    setGames(games.filter((task) => task.id !== id));
-  };
-
-  // Alterar o reminder 
-  const mudarReminder = (id) => {
-    setGames(
-      games.map((games) =>
-        games.id === id ? { ...games, reminder: !games.reminder } : games
-      )
-    );
-    console.log(id);
+  const deletaGames = (id) => {
+    setGames(games.filter((games) => games.id !== id));
   };
 
   return (
     <div className="container">
-      <NewTasks title="Jogos" />
+      <NewTasks title='jogos' />
       {games.length > 0 ? (
-        <TaksOpen
+        <TasksOpen
           games={games}
-          onDelete={deletaTarefa}
-          onToggle={mudarReminder}
+          onDelete={deletaGames}
         />
       ) : (
-        'Você já jogou todos os jogos do mês.'
+        'Não há jogos em aberto!'
       )}
-
-      <br />
     </div>
   )
-};
+}
 
 export default App;
