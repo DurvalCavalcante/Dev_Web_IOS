@@ -1,0 +1,15 @@
+React :
+É uma biblioteca para construir interface, usada mais pelos Desenvolvedores Fornt-End. Para aplicação de SPA ( Single Page Applicantion ) e MPA ( Multi-Page App ). O SPA é voltado mais para o lado do cliente, e ela faz as transições entre páginas mais rápidas. E o MPA  é um aplicação com várias páginas, que consiste em um grande número de páginas que atualiza toda vez que os dados são alterados.
+Pelo ( Apostila - IOS )
+
+Props: 
+São usado para passar componentes por meio de atributos HTML.
+Pelo ( Google )
+
+Hooks:
+São funções que permite a ligação entre recursos no React. É o hooks não funcionam dentro de classes.
+Pelo ( Google )
+
+Componentes: 
+São a principal aplicação em React. São como funções JavaScript. Eles aceitam entradas com propriedades e retornam novos elementos React, mas conhecido como JSX ( JavaScript Syntax Extension ).
+Pelo ( Apostila - IOS )
