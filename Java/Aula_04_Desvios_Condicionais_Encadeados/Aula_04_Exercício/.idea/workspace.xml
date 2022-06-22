@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fcfacaff-46c5-45f7-8fae-38ac0ec23fb7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_01_Decrescente/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_01_Decrescente/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_01_Decrescente/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_01_Decrescente/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_01_Decrescente/Projeto_01_Decrescente.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_01_Decrescente/out/production/Projeto_01_Decrescente/Decrescente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_01_Decrescente/src/Decrescente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_02_MaiorEntre3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_02_MaiorEntre3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_02_MaiorEntre3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_02_MaiorEntre3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_02_MaiorEntre3/Projeto_02_MaiorEntre3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_02_MaiorEntre3/out/production/Projeto_02_MaiorEntre3/MaiorEntre3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_02_MaiorEntre3/src/MaiorEntre3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_03_DiaDaSemana/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_03_DiaDaSemana/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_03_DiaDaSemana/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_03_DiaDaSemana/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_03_DiaDaSemana/Projeto_03_DiaDaSemana.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_03_DiaDaSemana/out/production/Projeto_03_DiaDaSemana/DiaDaSemana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula_04_Exercício/Projeto_03_DiaDaSemana/src/DiaDaSemana.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2AuSo5S7h8kXpvHusXsb5ZTm2Zr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fcfacaff-46c5-45f7-8fae-38ac0ec23fb7" name="Changes" comment="" />
+      <created>1655858149242</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655858149242</updated>
+    </task>
+    <servers />
+  </component>
+</project>
