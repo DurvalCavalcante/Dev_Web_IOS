@@ -4,6 +4,7 @@ public class Tabuada {
         int tabuada = 5;
 
         System.out.println("- O resultado da tabuada de 5 é: ");
+        System.out.println("");
 
         while (numero <= 10) {
             System.out.println(tabuada + " X " + numero + " = " + tabuada * numero);
