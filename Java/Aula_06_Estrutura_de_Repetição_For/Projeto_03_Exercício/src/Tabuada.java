@@ -23,7 +23,7 @@ public class Tabuada {
         }
 
         // Tabuada
-        System.out.println("- O resultado da tabuada de " + tabuada);
+        System.out.println("- O resultado da tabuada de " + tabuada + " é:");
         System.out.println("");
 
         for (int numero = 0; numero <=10; numero++){
