@@ -17,6 +17,7 @@ public class Banco {
 
             System.out.println("\n- Digite aqui o número da sua escolha: ");
             int opcao = teclado.nextInt();
+            
             if (opcao <= 3) {
                 switch (opcao) {
                     case 1:
