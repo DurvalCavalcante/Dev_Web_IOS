@@ -12,6 +12,24 @@ const NewTasks = ({ title }) => {
         setIsOpen(true);
     }
 
+    function saveItem() {
+        let idTarefa = document.getElementById('id-tarefa').value;
+        let idDescricao = document.getElementById('id-descricao').value;
+        let idData = document.getElementById('id-data').value;
+        let idHora = document.getElementById('id-hora').value;
+
+        let arrayItem = [
+            {
+                nome: idTarefa,
+                descricao: idDescricao,
+                data: idData,
+                hora: idHora,
+            },
+        ];
+
+        closeModal();
+    }
+
     function closeModal() {
         setIsOpen(false);
     }
@@ -31,19 +49,28 @@ const NewTasks = ({ title }) => {
         <header className="header">
             <h1>Agenda de {title}</h1>
             <Button text="Adicionar" bgColor="#4cac1c" onClick={openModal} />
-            <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles}>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                style={customStyles}
+            >
                 <section className="containe">
                     <div>
-                        <form className='form-control'>
+                        <form className="form-control">
                             <label>Tarefa</label>
-                            <input type="text" placeholder="Nova Tafera" />
+                            <input
+                                id="id-tarefa"
+                                type="text"
+                                placeholder="Nova Tafera"
+                            />
                         </form>
                     </div>
 
                     <div>
-                        <form className='form-control'>
+                        <form className="form-control">
                             <label>Descrição</label>
                             <textarea
+                                id="id-descricao"
                                 placeholder="Descrição da Tarefa"
                                 cols="30"
                                 rows="10"
@@ -52,20 +79,20 @@ const NewTasks = ({ title }) => {
                     </div>
 
                     <div>
-                        <form className='form-control'>
+                        <form className="form-control">
                             <label>Data</label>
-                            <input type="date" />
+                            <input id="id-data" type="date" />
                         </form>
                     </div>
 
                     <div>
-                        <form className='form-control'>
+                        <form className="form-control">
                             <label>Hora</label>
-                            <input type="time" />
+                            <input id="id-hora" type="time" />
                         </form>
                     </div>
 
-                    <button onClick={closeModal} type="button" className='btn'>
+                    <button onClick={saveItem} type="button" className="btn">
                         Adicionar
                     </button>
                 </section>
