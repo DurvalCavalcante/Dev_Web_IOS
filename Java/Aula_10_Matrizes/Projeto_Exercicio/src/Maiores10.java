@@ -27,7 +27,7 @@ public class Maiores10 {
             System.out.println("");
         }
 
-        System.out.println("\n- Sua Matriz tem ( " + soma + " ) maiores que '10'");
+        System.out.println("\n- Sua Matriz tem ( " + soma + " ) números maiores que '10'");
 
         teclado.close();
 
