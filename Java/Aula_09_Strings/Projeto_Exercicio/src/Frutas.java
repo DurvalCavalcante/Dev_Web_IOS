@@ -5,20 +5,19 @@ public class Frutas {
         Scanner teclado = new Scanner(System.in);
 
         String[] arrayFrutas = new String[5];
-
         for (int i = 0; i < arrayFrutas.length; i++) {
             System.out.println((i + 1) + " Fruta:");
             arrayFrutas[i] = teclado.nextLine();
         }
 
-        System.out.println("\n========== Verificando se está vazia e Igualando caracteres ==========");
+        System.out.println("\n========== Verificando se está vazia, Igualando caracteres e Eliminando caracter em branco ==========");
 
         for (int i = 0; i < 5; i++) {
             // Verificando se está vazia
             if (arrayFrutas[i].isEmpty()) {
                 System.out.println("\nO campo " + (i + 1) + " está vazio!!");
             } else {
-                System.out.println("\n" + (i + 1) + " - Fruta: " + arrayFrutas[i].toUpperCase());
+                System.out.println("\n" + (i + 1) + " - Fruta: " + arrayFrutas[i].toUpperCase().trim());
             }
         }
 

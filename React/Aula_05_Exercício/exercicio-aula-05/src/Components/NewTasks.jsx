@@ -20,12 +20,15 @@ const NewTasks = ({ title }) => {
 
         let arrayItem = [
             {
-                nome: idTarefa,
+                tarefa: idTarefa,
                 descricao: idDescricao,
                 data: idData,
                 hora: idHora,
+                validacao: false,
             },
         ];
+
+        console.log(arrayItem[0].tarefa);
 
         closeModal();
     }
