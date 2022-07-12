@@ -37,7 +37,7 @@ public class ValorM {
                 media += numeros[i] ;
         }
         System.out.println("========================");
-        System.out.println(" O media número é: " + media /10);
+        System.out.println(" O media dos número é: " + media /10);
         System.out.println("========================");
 
         teclado.close();
