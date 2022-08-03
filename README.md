@@ -1,6 +1,6 @@
-## <h1>Olá! Eu sou <a href="https://www.linkedin.com/in/durval-cavalcante"><i>Durval Cavalcante</i></a></h1>
+## <h1>👋🏼 Olá! Eu sou <a href="https://www.linkedin.com/in/durval-cavalcante"><i>Durval Cavalcante</i></a></h1>
 🌱 Desenvolvedor Front-End Jr<br>
-📚 Repositório do curso de Desenvolvimento Web IOS - 2022
+📚 Repositório do Curso de Desenvolvimento Web IOS - 2022
 <br /><br />
 
 <div aling="center">
